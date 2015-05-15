@@ -1,18 +1,18 @@
 ---
 layout: article
-title: "JavaFX 8 Tutorial - Part 1: Scene Builder"
+title: "JavaFX 8 Eğitimi - Bölüm 1: Scene Builder"
 date: 2014-04-19 01:00
-updated: 2015-03-12 00:00
+güncelleme: 2015-03-12 00:00
 slug: javafx-8-tutorial/part1
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-en-part1.md
-description: "Learn how to set up a JavaFX project. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX."
+description: "Learn how to set up a JavaFX project. JavaFX projesi kurmayı öğrenin. This is part one of a seven-part tutorial about designing, programming and deploying an address application with JavaFX.Bu bölüm, JavaFX ile yapılmış bir adres programının tasarımı, programlaması ve dağıtımıyla ilgili yedi bölümlük JavaFX eğitiminin bir parçasıdır."
 image: /assets/library/javafx-8-tutorial/part1/addressapp-part1.png
 published: true
 prettify: true
 comments: 
   identifier: /java/javafx-8-tutorial-part1/
 sidebars:
-- header: "Articles in this Series"
+- header: "Bu Yazı Dizisindeki Yazılar"
   body:
   - text: "Introduction"
     link: /library/javafx-8-tutorial/
@@ -30,16 +30,16 @@ sidebars:
   - text: "Part 4: CSS Styling"
     link: /library/javafx-8-tutorial/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Part 5: XML Olarak Veri Depolama"
     link: /library/javafx-8-tutorial/part5/
     paging: 5
   - text: "Part 6: Statistics Chart"
     link: /library/javafx-8-tutorial/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Part 7: Dağıtım"
     link: /library/javafx-8-tutorial/part7/
     paging: 7
-- header: "Download Sources"
+- header: "Kaynakları İndirin"
   body:
   - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u40)</em>
     link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
@@ -54,12 +54,12 @@ languages:
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Topics in Part 1
+### Bölüm 1'deki Konular
 
-* Getting to know JavaFX
-* Creating and starting a JavaFX Project
-* Using Scene Builder to design the user interface
-* Basic application structure using the Model-View-Controller (MVC) pattern
+* JavaFX'i tanıma
+* JavaFX projesi oluşturma
+* Scene Builder kullanarak arayüz tasarımı
+* Temel uygulama yapılarında Model-View-Controller (MVC) deseni kullanımı
 
 
 *****
