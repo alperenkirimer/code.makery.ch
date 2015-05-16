@@ -49,82 +49,82 @@ languages:
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
 
-### Topics in Part 1
+### Bölüm 1'deki Konular
 
-* Getting to know JavaFX
-* Creating and starting a JavaFX Project
-* Using Scene Builder to design the user interface
-* Basic application structure using the Model-View-Controller (MVC) pattern
+* JavaFX'i tanıma
+* JavaFX projesi oluşturma ve projeye başlama
+* Scene Builder kullanarak kullanıcı arayüzü oluşturma
+* Model-View-Controller (MVC) deseni kullanarak uygulama yapılanması
 
 
 *****
 
 
-### Prerequisites
+### Önkoşullar
 
-* Latest [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (includes **JavaFX 8**).
-* Eclipse 4.4 or greater with e(fx)clipse plugin. The easiest way is to download the preconfigured distro from the [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). As an alternative you can use an [update site](http://www.eclipse.org/efxclipse/install.html) for your Eclipse installation.
-* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) (provided by Gluon because [Oracle only ships it in source code form](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
+* En son [Java JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) (**JavaFX 8** dahil).
+* e(fx)clipse plugin'i olan Eclipse 4.4 ya da daha ileri sürümü. Buradan kolaylıkla indirebilirsiniz [e(fx)clipse website](http://efxclipse.bestsolution.at/install.html#all-in-one). Alternatif olarak buradan da indirebilirsiniz [update site](http://www.eclipse.org/efxclipse/install.html)
+* [Scene Builder 8.0](http://gluonhq.com/products/downloads/) ( Gluon tarafından yapılmışı [Çünkü Oracle'ın sağladığı Scene Builder sadece kaynak kod şeklinde](http://www.oracle.com/technetwork/java/javase/downloads/sb2download-2177776.html)).
 
 
-### Eclipse Configurations 
+### Eclipse Yapılandırmaları
 
-We need to tell Eclipse to use JDK 8 and also where it will find the Scene Builder:
+Eclipse'e JDK 8'i kullanması gerektiğini ve Scene Builder'ı nerede bulacağını söylemeliyiz:
 
-1. Open the Eclipse Preferences and navigate to *Java | Installed JREs*.
+1. Eclipse Preferences'ı açın ve şu yolu izleyin *Java | Installed JREs*.
 
-2. Click *Add...*, select *Standard VM* and choose the installation *Directory* of your JDK 8.
+2. Şunu tıklayın *Add...*, şunu seçin *Standard VM* ve JDK 8'in yüklü olduğu *Directory*'i seçin.
 
-3. Remove the other JREs or JDKs so that the **JDK 8 becomes the default**.   
+3. Diğer JRE ve JDK'ları silin böylece **JDK 8 default hale gelir**.   
 ![Preferences JDK](/assets/library/javafx-8-tutorial/part1/preferences-jdk.png)
 
-4. Navigate to *Java | Compiler*. Set the **Compiler compliance level to 1.8**.   
+4. Şu yolu izleyin *Java | Compiler*. **Compiler compliance level'i 1.8'e ayarlayın**.   
 ![Preferences Compliance](/assets/library/javafx-8-tutorial/part1/preferences-compliance.png)
 
-5. Navigate to the *JavaFX* preferences. Specify the path to your Scene Builder executable.   
+5. *JavaFX* preferences'a gidin. Scene Builder uygulamasının yerini belirtin.   
 ![Preferences JavaFX](/assets/library/javafx-8-tutorial/part1/preferences-javafx.png)
 
 
-### Helpful Links
+### Faydalı bağlantılar
 
-You might want to bookmark the following links:
+Aşağıdaki linklere de bakmak isteyebilirsiniz.
 
-* [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - JavaDoc for the standard Java classes
-* [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaDoc for JavaFX classes
-* [ControlsFX API](http://controlsfx.bitbucket.org/) - JavaDoc for the [ControlsFX project](http://fxexperience.com/controlsfx/) for additional JavaFX controls
-* [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Official JavaFX Tutorials by Oracle
+* [Java 8 API](http://docs.oracle.com/javase/8/docs/api/) - standard Java sınıfları için JavaDoc
+* [JavaFX 8 API](http://docs.oracle.com/javase/8/javafx/api/) - JavaFX sınıfları için JavaDoc
+* [ControlsFX API](http://controlsfx.bitbucket.org/) - [ControlsFX project](http://fxexperience.com/controlsfx/) ek JavaFX kontrolleri için
+* [Oracle's JavaFX Tutorials](http://docs.oracle.com/javase/8/javafx/get-started-tutorial/get_start_apps.htm) - Oracle tarafından hazırlanmış resmi JavaFX eğitsel içerikleri
 
-Now, let's get started!
-
-
-*****
-
-
-## Create a new JavaFX Project
-
-In Eclipse (with e(fx)clipse installed) go to *File | New | Other...* and choose *JavaFX Project*.   
-Specify the Name of the project (e.g. *AddressApp*) and click *Finish*.
-
-Remove the *application* package and its content if it was automatically created.
-
-
-### Create the Packages
-
-Right from the start we will follow good software design principles. One very important principle is that of [**Model-View-Controller** (MVC)](http://en.wikipedia.org/wiki/Model_View_Controller). According to this we divide our code into three units and create a package for each (Right-click on the src-folder, *New... | Package*):
-
-* `ch.makery.address` - contains *most* controller classes (=business logic)
-* `ch.makery.address.model` - contains model classes
-* `ch.makery.address.view` - contains views 
-
-**Note:** Our view package will also contain some controllers that are directly related to a single view. Let's call them **view-controllers**.
+Haydi, artık başlayalım!
 
 
 *****
 
 
-## Create the FXML Layout File
+## JavaFX projesi oluşturma
 
-There are two ways to create the user interface. Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. We will use XML (ending in .fxml) for most parts. I find it a cleaner way to keep the controller and view separated from each other. Further, we can use the graphical Scene Builder to edit our XML. That means we will not have to directly work with XML.
+Eclipse'de ( e(fx)clipse yüklü halde ) şu yolu takip edin *File | New | Other...* ve *JavaFX Project*'i seçin.   
+Projenizin ismini belirleyip ( örn. *AddressApp*) ve *Finish*'i tıklayın.
+
+Otomatik oluşmuş *application* paketi varsa, içeriği ile birlikte silin.
+
+
+### Paket Oluşturma
+
+Şu andan itibaren iyi bir yazılım için tasarım prensiplerini takip edeceğiz. Önemli prensiplerden biri de şudur: [**Model-View-Controller** (MVC)](http://tr.wikipedia.org/wiki/Model-View-Controller). Buna göre kodumuzu üç parçaya ayırıp herbiri için bir paket oluşturacağız. (src-folder'a sağ tık, *New... | Package*):
+
+* `ch.makery.address` - controller sınıflarının *büyük kısmını* içerecek (=iş mantığı)
+* `ch.makery.address.model` -  model(veriler) sınıflarını içerecek
+* `ch.makery.address.view` - view(arayüz)'ları içerecek
+
+**Not:** Paketimiz ayrıca direkt olarak tek view'a bağlı bazı controller'ları da içerecek . Onlara da **view-controllers** diyoruz.
+
+
+*****
+
+
+## FXML Layout(yerleşim) File oluşturma
+
+Kullanıcı arayüzünü oluşturmanın iki yolu var. Either using an XML file or programming everything in Java. Looking around the internet you will encounter both. We will use XML (ending in .fxml) for most parts. I find it a cleaner way to keep the controller and view separated from each other. Further, we can use the graphical Scene Builder to edit our XML. That means we will not have to directly work with XML.
 
 Right-click on the view package and create a new *FXML Document* called `PersonOverview`.   
 
