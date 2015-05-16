@@ -5,7 +5,7 @@ date: 2014-04-19 00:00
 updated: 2015-03-12 00:00
 slug: javafx-8-tutorial
 github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-en.md
-description: "This seven-part tutorial walks through designing, programming and deploying an address application with JavaFX."
+description: "Bu yedi bölümlük eğitsel içerik size JavaFX ile bir adres uygulamasının tasarım, programlama ve dağıtım adımlarının nasıl yapıldığını öğretecek."
 image: /assets/library/javafx-8-tutorial/addressapp.png
 published: true
 prettify: true
@@ -21,22 +21,22 @@ sidebars:
   - text: "Bölüm 1: Scene Builder"
     link: /library/javafx-8-tutorial/part1/
     paging: 1
-  - text: "Bölüm 2: Model and TableView"
+  - text: "Bölüm 2: Model ve TableView"
     link: /library/javafx-8-tutorial/part2/
     paging: 2
   - text: "Bölüm 3: Kullanıcıyla Etkileşim"
     link: /library/javafx-8-tutorial/part3/
     paging: 3
-  - text: "Bölüm 4: CSS Styling"
+  - text: "Bölüm 4: CSS Biçimlendirme"
     link: /library/javafx-8-tutorial/part4/
     paging: 4
-  - text: "Bölüm 5: Storing Data as XML"
+  - text: "Bölüm 5: XML Olarak Veri Depolama"
     link: /library/javafx-8-tutorial/part5/
     paging: 5
-  - text: "Bölüm 6: Statistics Chart"
+  - text: "Bölüm 6: İstatistik Grafikleri"
     link: /library/javafx-8-tutorial/part6/
     paging: 6
-  - text: "Bölüm 7: Deployment"
+  - text: "Bölüm 7: Dağıtım"
     link: /library/javafx-8-tutorial/part7/
     paging: 7
 languages: 
@@ -69,11 +69,11 @@ Bu eğitsel içerik size bir adres uygulamasının tasarım, programlama ve dağ
 
 **Biraz fazla olabilir!** Ancak, bu eğitimi tamamladığınızda JavaFX ile gelişmiş uygulamalar geliştirmeye hazır olacaksınız.
 
-## How to use this Tutorial
+## Bu içeriği nasıl kullanabilirsiniz?
 
-There are two ways to use this tutorial:
+Bunu yapmanın iki yolu var:
 
-* **learn-a-lot track:** Create your own JavaFX project from the ground up.
-* **fast track:** Import the source code for a tutorial part into your IDE (it's an Eclipse project, but you could use other IDEs like NetBeans with slight modifications). Then go through the tutorial to understand the code.
+* **Bir çok şey öğrenerek:** Sıfırdan kendi JavaFX projenizi oluşturun.
+* **Hızlıca göz gezdirerek:** Kaynak kodu IDE'nizde açın. Sonra da kodu anlamaya çalışın. ( Eclipse projesi fakat diğer IDE'lerde de ufak ayarlamalarla açılabilir)
 
-Now, I hope you'll have fun! Start with [Part 1: Scene Builder](/library/javafx-8-tutorial/part1/).
+Umarım eğlenirsiniz! Şununla başlayın [Bölüm 1: Scene Builder](/library/javafx-8-tutorial/part1/).
