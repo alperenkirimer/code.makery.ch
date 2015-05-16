@@ -56,7 +56,7 @@ Bu eğitsel içerik size bir adres uygulamasının tasarım, programlama ve dağ
 
 * JavaFX projesi oluşturma ve projeye başlama
 * Scene Builder kullanarak kullanıcı arayüzü tasarımı
-* Model-View-Controller (MVC) mimari deseniyle uygulama yapılanması
+* Model-View-Controller (MVC) deseniyle uygulama yapılanması
 * `ObservableLists` kullanımıyla otomatik olarak kullanıcı arayüzünü güncelleme
 * `TableView` kullanımı ve tablodaki seçim değişikliklerini idare etme
 * Kişileri düzenlemek için açılır (popup) diyalog oluşturma
@@ -65,7 +65,7 @@ Bu eğitsel içerik size bir adres uygulamasının tasarım, programlama ve dağ
 * Veriyi XML olarak depolama
 * En son açılmış dosyanın yolunu kullanıcı tercihleri bölümünde kaydetme
 * JavaFX grafikleri ile istatistik oluşturma
-* JavaFX uygulamasının native paket halinde dağıtımı
+* JavaFX uygulamasının yerel paket halinde dağıtımı
 
 **Biraz fazla olabilir!** Ancak, bu eğitimi tamamladığınızda JavaFX ile gelişmiş uygulamalar geliştirmeye hazır olacaksınız.
 
