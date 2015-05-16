@@ -12,44 +12,39 @@ prettify: true
 comments: 
   identifier: /java/javafx-8-tutorial-part1/
 sidebars:
-- header: "Articles in this Series"
+- header: "Bu Yazı Dizisindeki Başlıklar"
   body:
-  - text: "Introduction"
+  - text: "Giriş"
     link: /library/javafx-8-tutorial/
-    paging: Intro
-  - text: "Part 1: Scene Builder"
+    paging: Giriş
+    active: true
+  - text: "Bölüm 1: Scene Builder"
     link: /library/javafx-8-tutorial/part1/
     paging: 1
-    active: true
-  - text: "Part 2: Model and TableView"
+  - text: "Bölüm 2: Model ve TableView"
     link: /library/javafx-8-tutorial/part2/
     paging: 2
-  - text: "Part 3: Interacting with the User"
+  - text: "Bölüm 3: Kullanıcıyla Etkileşim"
     link: /library/javafx-8-tutorial/part3/
     paging: 3
-  - text: "Part 4: CSS Styling"
+  - text: "Bölüm 4: CSS Biçimlendirme"
     link: /library/javafx-8-tutorial/part4/
     paging: 4
-  - text: "Part 5: Storing Data as XML"
+  - text: "Bölüm 5: XML Olarak Veri Depolama"
     link: /library/javafx-8-tutorial/part5/
     paging: 5
-  - text: "Part 6: Statistics Chart"
+  - text: "Bölüm 6: İstatistik Grafikleri"
     link: /library/javafx-8-tutorial/part6/
     paging: 6
-  - text: "Part 7: Deployment"
+  - text: "Bölüm 7: Dağıtım"
     link: /library/javafx-8-tutorial/part7/
     paging: 7
-- header: "Download Sources"
-  body:
-  - text: Part 1 as Eclipse Project <em>(requires at least JDK 8u40)</em>
-    link: https://github.com/marcojakob/tutorial-javafx-8/releases/download/v1.1/addressapp-jfx8u40-part-1.zip
-    icon-css: fa fa-fw fa-download
 languages: 
   header: Languages
   collection: library
   item: javafx-8-tutorial
-  part: part1
-  active: en
+  part: 
+  active: tr
 ---
 
 ![Screenshot AddressApp Part 1](/assets/library/javafx-8-tutorial/part1/addressapp-part1.png)
